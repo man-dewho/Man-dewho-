@@ -49,6 +49,13 @@ nav a {
   padding: 10px; /* Adds some padding around the text */
 }
 
+.subscribe-header {
+  color: #999;
+  text-decoration: none;
+  font-size: 18px; /* Adjust this value to change text size */
+  padding: 10px; /* Adds some padding around the text */
+  text-align: center; /* Since the original inline style had text-align: center */
+}
 
 ul {
     list-style-type: none;
