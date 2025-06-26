@@ -17,7 +17,7 @@
         </footer>
     <main>
         <div class="gallery-image">
-            <img src="P1028918.jpeg" alt="Ballad to a Lullaby, 2024">
+            <img id="slideshow-image" src="P1028918.jpeg" alt="Ballad to a Lullaby, 2024">
         </div>
         <h2 class="subscribe-header">subscribe to know when and where- - - ></h2>
         <div class="subscribe-form">
@@ -28,6 +28,25 @@
         </div>
     </main>
     
+    <script>
+        // Array of images to cycle through
+        const images = [
+            { src: 'P1028918.jpeg', alt: 'Ballad to a Lullaby, 2024' },
+            { src: 'residency.jpeg', alt: 'Residency, 2024' }
+        ];
+        
+        let currentImageIndex = 0;
+        const slideshowImage = document.getElementById('slideshow-image');
+        
+        function changeImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            slideshowImage.src = images[currentImageIndex].src;
+            slideshowImage.alt = images[currentImageIndex].alt;
+        }
+        
+        // Change image every 5 seconds
+        setInterval(changeImage, 5000);
+    </script>
 </body>
 </html>
 
