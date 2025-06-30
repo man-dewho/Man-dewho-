@@ -7,34 +7,32 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1 class="header-link">Yoav Ben Moshe</h1>
-        <footer>
+    <div class="container">
+        <aside class="sidebar">
+            <h1 class="header-link">Yoav Ben Moshe</h1>
             <div class="social-icons">
                 <a href="https://www.instagram.com/man.dewho/profilecard/?igsh=d3pnM3g5dTIxZGxz">@man.dewho</a>
                 <a href="mailto:yoavbenmo@gmail.com">yoavbenmo@gmail.com</a>
             </div>
-        </footer>
-    <main>
-        <div class="gallery-image">
-            <img id="slideshow-image" src="P1028918.jpeg" alt="Ballad to a Lullaby, 2024">
-        </div>
-        <h2 class="subscribe-header">subscribe to know when and where- - - ></h2>
-        <div class="subscribe-form">
-            <form action="https://formspree.io/f/xblroeea" method="POST">
-                <input type="email" name="email" placeholder="Enter your email address" required>
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-    </main>
-    
+            <h2 class="subscribe-header">subscribe to know when and where:</h2>
+            <div class="subscribe-form">
+                <form action="https://formspree.io/f/xblroeea" method="POST">
+                    <input type="email" name="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </aside>
+        <main class="main-content">
+            <div class="gallery-image">
+                <img id="slideshow-image" src="P1028918.jpeg" alt="Ballad to a Lullaby, 2024">
+            </div>
+        </main>
+    </div>
     <script>
         // Array of images to cycle through
         const images = [
             { src: 'P1028918.jpeg', alt: 'Ballad to a Lullaby, 2024' },
-            { src: 'residency.jpeg', alt: 'Special Delivery, 2024' },
-            { src: 'Shchem.jpg', alt: 'Shchem, 2024' },
-            { src: 'IMG_4428.jpg', alt: 'Red Barrier, 2023'},
+            { src: 'Shchem.jpg', alt: 'Shchem, 2024' }
         ];
         
         let currentImageIndex = 0;
