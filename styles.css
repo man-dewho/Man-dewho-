@@ -330,3 +330,48 @@ main {
 .subscribe-header {
   font-size: 16px;
 }
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  
+  .container {
+    flex-direction: column;
+    min-height: auto;
+  }
+  
+  .sidebar {
+    width: 100%;
+    min-width: auto;
+    max-width: none;
+    padding: 20px;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    order: 1;
+  }
+  
+  .main-content {
+    padding: 20px;
+    order: 2;
+  }
+  
+  .gallery-image {
+    width: 100%;
+    max-width: none;
+  }
+  
+  .subscribe-form {
+    max-width: none;
+  }
+  
+  .social-icons {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .social-icons a {
+    margin: 0;
+  }
+}
