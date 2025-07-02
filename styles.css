@@ -358,7 +358,7 @@ main {
     max-width: none;
     padding: 20px;
     border-right: none;
-    border-bottom: 1px solid #eee;
+    border-bottom: 0px solid #eee;
     order: 1;
   }
   
